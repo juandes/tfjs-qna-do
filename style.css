@@ -4,10 +4,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
 }
 
-h2 {
-  color: dimgray
-}
-
 button {
   margin: 10px 10px;
   font-size: 100%;

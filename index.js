@@ -43,7 +43,8 @@ his honor.[10] There has been a resurgence in popular interest in Tesla since th
 
 const doText = `DigitalOcean, Inc. is an American cloud infrastructure provider[2] headquartered in New York City with data centers worldwide.[3] 
 DigitalOcean provides developers cloud services that help to deploy and scale applications that run simultaneously on multiple computers.
-DigitalOcean also runs Hacktoberfest which is a month-long celebration (October 1-31) of open source software run in partnership with GitHub and Twilio. `;
+DigitalOcean also runs Hacktoberfest which is a month-long celebration (October 1-31) of open source software run in partnership with GitHub and Twilio.
+`;
 
 const pikachuText = `Pikachu[c] is a species of Pokémon, fictional creatures that appear in an assortment of media of the Pokémon franchise by The Pokémon Company. 
 Pikachu is a yellow mouse-like Pokémon with powerful electrical abilities. In most vocalized appearances, including the anime and certain video games, it is primarily voiced by Ikue Ōtani. 
@@ -83,17 +84,17 @@ function setupButtons() {
     }, '#answer-button', true);
 
   createButton('Tesla', 'test-case-tesla-btn',
-    async () => {
+    () => {
       document.getElementById('input-text').value = teslaText;
     }, '#test-buttons', false);
 
   createButton('DigitalOcean', 'test-case-do-btn',
-    async () => {
+    () => {
       document.getElementById('input-text').value = doText;
     }, '#test-buttons', false);
 
   createButton('Pikachu', 'test-case-pikachu-btn',
-    async () => {
+    () => {
       document.getElementById('input-text').value = pikachuText;
     }, '#test-buttons', false);
 }
