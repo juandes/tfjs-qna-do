@@ -14,13 +14,19 @@
     <div class="main-centered-container">
         <h1>TensorFlow.js Pre-trained "QnA" BERT model</h1>
         <h3 class="header-border">Introduction</h3>
-        <p>This application hosts TensorFlow.js' pre-trained Question and Answer model, and it attempts to answer the question
-        using a given passage. To use it, write a passage (any!) in the input area below and a question. Then, click the
-        "answer!" button to answer the question using the given passage as a reference. You could also click any of the test
-        buttons to load a pre-defined input text.</p>
-        
+        <p>This application hosts TensorFlow.js' pre-trained Question and Answer model, and it attempts to answer the
+            question
+            using a given passage. To use it, write a passage (any!) in the input area below and a question. Then, click
+            the
+            "answer!" button to answer the question using the given passage as a reference. You could also click any of
+            the test
+            buttons to load a pre-defined input text.</p>
+
+        <h4>Try the test passage!</h4>
+        <div id='test-buttons'></div>
+
         <div>
-            <h4>Enter the model's input here</h4>
+            <h4>Enter the model's input passage here</h4>
             <textarea id='input-text' rows="20" cols="100" placeholder="Write the input text..."></textarea>
         </div>
 
@@ -30,13 +36,12 @@
         </div>
         <h4>Click to answer the question</h4>
         <div id="answer-button"></div>
-        <h4>Answer</h4>
+        <h4>The model's answers</h4>
         <div id='answer'></div>
-        <h4>Try different test passages!</h4>
-        <div id='test-buttons'></div>
+
         <script src="./index.js"></script>
 
-        
+
     </div>
 </body>
 
